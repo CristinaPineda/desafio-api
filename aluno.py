@@ -44,7 +44,7 @@ class EditaMatriculas(Resource):
 			resposta = {'status': 'erro', 'mensagem': mensagem}
 		except Exception:
 			mensagem = 'Erro desconhecido'
-			response = {'status': 'erro', 'mensagem':mensagem}
+			resposta = {'status': 'erro', 'mensagem':mensagem}
 		return resposta
 
 	def put(self, id):
@@ -58,5 +58,5 @@ class EditaMatriculas(Resource):
 
 
 #URN
-#api.add_resource(Gabaritos, '/aluno/')
-#api.add_resource(EditaGabaritos, '/aluno/<int:id>')
+#api.add_resource(Alunos, '/aluno/')
+#api.add_resource(EditaMatricula, '/aluno/<int:id>')
