@@ -6,7 +6,6 @@
 	{	
 		"id": 0
         "materia": "matematica",
-        "ano": "1_ano",
         "respostas": [
             {
                 "1": "A",
@@ -17,3 +16,9 @@
     }
 
 
+##Exemplo de requisoção para cadastrar alunos 
+
+	{
+        "id": "1",
+        "nome_aluno": "Cristina Pineda"
+    }

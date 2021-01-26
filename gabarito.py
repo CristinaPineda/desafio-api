@@ -9,7 +9,6 @@ disciplina = [
 	{
 		"id": "1",
 		'materia': 'matematica',
-		'ano':'1_ano',
 		'respostas': [{'1':'A',
 				   		'2':'B',
 				  	 	'3':'D'}
