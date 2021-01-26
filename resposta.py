@@ -5,17 +5,7 @@ import json
 #cadastro de alunos 
 
 #variável para armazenar respostas dos alunos
-respostaAlunos = [
-	{
-		"id": "1",
-		"nome_aluno": "Cristina",
-		"materia": "matematica",
-		"respostasProva": [{"1":"A",
-				   		"2":"B",
-				  	 	"3":"D"}
-				 	]		
-	}
-]
+respostaAlunos = []
 			
 class RespostasAlunos(Resource):
 	# respostas dos alunos

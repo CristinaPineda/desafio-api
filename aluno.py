@@ -5,12 +5,7 @@ import json
 #cadastro de alunos 
 
 #variável para armazenar os alunos
-listaAlunos = [
-	{
-		"id": "1",
-		'nome_aluno': 'Cristina Pineda',		
-	}
-]
+listaAlunos = []
 			
 class Alunos(Resource):
 	# cadastra novos alunos
@@ -19,7 +14,6 @@ class Alunos(Resource):
 		while (numeroAlunos <= 99):
 			dados = json.loads(request.data)
 			aluno = len(listaAlunos)
-			dados['nome_aluno'] = aluno
 			listaAlunos.append(dados)
 			numeroAlunos = numeroAlunos+1
 			return listaAlunos[aluno]

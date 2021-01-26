@@ -6,14 +6,7 @@ import json
 
 #variável para armazenar os gabaritos
 disciplina = [
-	{
-		"id": "1",
-		'materia': 'matematica',
-		'respostas': [{'1':'A',
-				   		'2':'B',
-				  	 	'3':'D'}
-				 	]		
-	}
+	
 ]
 			
 class Gabaritos(Resource):
@@ -21,7 +14,6 @@ class Gabaritos(Resource):
 	def post(self):
 		dados = json.loads(request.data)
 		posicao = len(disciplina)
-		dados['materia'] = posicao
 		disciplina.append(dados)
 		return disciplina[posicao]
 
